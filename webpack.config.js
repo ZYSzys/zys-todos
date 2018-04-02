@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: './dist/',
+    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -37,15 +37,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loader: 'style!css!less'
-      },
-      {
-        test: /\.less$/,
-        loader: 'css-loader'
-      },
-      {
-        test: /\.less$/,
-        loader: 'less-loader'
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
   },
