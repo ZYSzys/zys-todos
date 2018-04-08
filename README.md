@@ -1,4 +1,4 @@
-# vue-todos
+# zys-todos
 
 > A Vue.js project
 
